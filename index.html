@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <form name="form">
+        <div class="display">
+          <input type="text" class="calculator-screen" name="displayResult" placeholder="0" />
+        </div>
+        <div class="calculator-keys">
+          <input type="button" class="operator" value="+" name="plus" onClick="calcNumbers(plus.value)">
+          <input type="button" class="operator" value="-" name="minus" onClick="calcNumbers(minus.value)">
+          <input type="button" class="operator" value="*" name="multiplied" onClick="calcNumbers(multiplied.value)">
+          <input type="button" class="operator" value="/" name="divided" onClick="calcNumbers(divided.value)">
+          <input type="button" value="7" name="b7" onClick="calcNumbers(b7.value)">
+          <input type="button" value="8" name="b8" onClick="calcNumbers(b8.value)">
+          <input type="button" value="9" name="b9" onClick="calcNumbers(b9.value)">
+          <input type="button" value="4" name="b4" onClick="calcNumbers(b4.value)">
+          <input type="button" value="5" name="b5" onClick="calcNumbers(b5.value)">
+          <input type="button" value="6" name="b6" onClick="calcNumbers(b6.value)">
+          <input type="button" value="1" name="b1" onClick="calcNumbers(b1.value)">
+          <input type="button" value="2" name="b2" onClick="calcNumbers(b2.value)">
+          <input type="button" value="3" name="b3" onClick="calcNumbers(b3.value)">
+          <input type="button" value="0" name="b0" onClick="calcNumbers(b0.value)">
+          <input type="button" class="all-clear" value="AC" onclick="clearAll()">
+          <input type="button" class="equal-sign operator" value="=" onclick="result()">
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
